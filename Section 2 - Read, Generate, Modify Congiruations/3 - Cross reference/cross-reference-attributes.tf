@@ -1,13 +1,3 @@
-### Documentation Referred:
-
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip
-
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
-
-
-### cross-reference-attributes.tf
-
-```sh
 resource "aws_eip" "lb" {
   domain   = "vpc"
 }
@@ -24,10 +14,3 @@ resource "aws_vpc_security_group_ingress_rule" "example" {
   ip_protocol = "tcp"
   to_port     = 443
 }
-```
-
-### Commands Used:
-```sh
-terraform apply -auto-approve
-terraform destroy -auto-approve
-```
